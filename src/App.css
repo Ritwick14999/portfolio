@@ -1,0 +1,184 @@
+/* Technical Light Mode Portfolio - Orange Accent */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f6f8fa; /* Light grey background */
+  color: #24292f; /* Deep grey text */
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Technical Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  gap: 25px;
+  border-bottom: 2px solid #ff9800; /* Orange accent */
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.navbar a {
+  color: #57606a;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-family: 'Consolas', 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar a.active-link, .navbar a:hover {
+  background-color: #f0f3f6;
+  color: #e65100; /* Slightly darker orange for readability on light background */
+}
+
+.content {
+  padding: 40px 0;
+}
+
+.page-container h1 {
+  text-align: left;
+  margin-bottom: 40px;
+  color: #0f1419;
+  font-size: 2.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #d0d7de;
+  padding-bottom: 10px;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  gap: 40px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Framed Profile Picture */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px; 
+  object-fit: cover;
+  border: 2px solid #ff9800;
+  padding: 4px; 
+  background-color: #ffffff;
+}
+
+.details h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #e65100;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.details h2:first-of-type {
+  margin-top: 0;
+}
+
+.details ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: #24292f;
+}
+
+.details p {
+  color: #24292f;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  border-left: 4px solid #ff9800;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.project-card:hover {
+  border-color: #a4b2c1;
+  transform: translateX(5px); 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+
+.project-card h2 {
+  color: #0f1419;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* Terminal-style tech stack pills */
+.tech-stack {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #e65100;
+  background: #f6f8fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d0d7de;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Outline Buttons */
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: #e65100;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: bold;
+  border: 1px solid #ff9800;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #ff9800;
+  color: #ffffff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 650px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .profile-pic {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+}
