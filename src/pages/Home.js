@@ -12,33 +12,36 @@ function Home() {
         <div className="details">
           <h2>About Me</h2>
           <p>
-           
-I am a final-year B.Tech student in Artificial Intelligence at Mahindra University,
-interested in machine learning, deep learning, and LLM-based agents. I enjoy building
-things end to end and, just as much, figuring out where and why they break: rigorous
-evaluation, reproducible experiments, and honest reporting of negative results.
-Always open to learning, collaborating, and growing in the field of AI.
-
-
+            I'm a final-year B.Tech student in Artificial Intelligence at Mahindra University,
+            looking for ML engineer and applied AI roles. Most of what I've built over the past
+            year is around LLMs: RAG pipelines, agents, and the evaluation code that tells you
+            whether they actually work. This summer I interned at NIT Raipur on a multimodal RAG
+            system for skin disease classification, which is now being written up as a paper.
+          </p>
+          <p>
+            I like the less glamorous parts of ML work. Writing tests, tracking down the bug that
+            was quietly inflating accuracy, checking whether a result holds up on a second dataset.
+            On my agent memory project it didn't, and I learned more from figuring out why than
+            from the part that worked.
           </p>
 
           <h2>Research Interests</h2>
           <p>
-          My research interests lie in applied Machine Learning and Natural Language Processing,
-          with a focus on retrieval-augmented and agentic LLM systems. I am especially interested in
-          evaluating whether these systems are actually grounded in their evidence, in memory and
-          forgetting for long-horizon agents, and in multimodal retrieval for healthcare, where AI
-          can practically assist in diagnosis and clinical decision-making.
+            Mostly LLM agents and retrieval. A lot of my recent work comes back to one question:
+            when a model gets the right answer, is it actually using the evidence it retrieved?
+            In clinical QA, often it isn't. I'm also interested in how agents should remember and
+            forget over long conversations, and in multimodal models for medical imaging. I'd like
+            to work on a team that puts ML in front of real users and takes measuring it seriously.
           </p>
 
           <h2>Experience</h2>
           <ul>
             <li>
-              <strong>Research Intern</strong>, National Institute of Technology, Raipur (Jun 2026 – Aug 2026):
+              <strong>Research Intern</strong>, National Institute of Technology, Raipur (Jun 2026 - Aug 2026):
               multimodal dermatology RAG pipeline; manuscript under submission.
             </li>
             <li>
-              <strong>ML Intern</strong>, YBI Foundation, Remote (Jun 2025 – Jul 2025):
+              <strong>ML Intern</strong>, YBI Foundation, Remote (Jun 2025 - Jul 2025):
               XGBoost disease classifier on symptom features.
             </li>
           </ul>
@@ -46,7 +49,6 @@ Always open to learning, collaborating, and growing in the field of AI.
           <h2>Personal Details</h2>
           <ul>
             <li><strong>Email:</strong> ritwick2509@gmail.com / se23uari105@mahindrauniversity.edu.in</li>
-            <li><strong>Phone:</strong> 9009875477</li>
             <li><strong>LinkedIn:</strong> linkedin.com/in/ritwick-sharma-b0bb9034a</li>
             <li><strong>GitHub:</strong> github.com/Ritwick14999</li>
           </ul>
