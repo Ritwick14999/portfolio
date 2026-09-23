@@ -3,7 +3,7 @@ import React from 'react';
 const research = [
   {
     title: "Multimodal Dermatology RAG Pipeline",
-    date: "Jun 2026 – Aug 2026",
+    date: "Jun 2026 - Aug 2026",
     org: "Research Intern, National Institute of Technology, Raipur",
     tech: "Python, BiomedCLIP, Qwen3-VL-8B-Instruct, ChromaDB",
     points: [
@@ -21,9 +21,9 @@ const projects = [
     date: "Aug 2026",
     tech: "Python, PyTorch, Ollama, DeBERTa-NLI",
     points: [
-      "Evaluation framework measuring why retrieval-augmented LLM agents fail, not just how often: 74–90% of correct PubMedQA answers contain at least one claim not entailed by the retrieved evidence, a failure invisible to accuracy metrics.",
+      "Evaluation framework measuring why retrieval-augmented LLM agents fail, not just how often: 74-90% of correct PubMedQA answers contain at least one claim not entailed by the retrieved evidence, a failure invisible to accuracy metrics.",
       "Validated the automated failure-mode classifier against blind human annotation at Cohen's κ = 0.737 (82.5% agreement), with thresholds calibrated on dev and reported on a disjoint set.",
-      "Ran 3,400+ agent episodes across two 8B open-weight models; a paired closed-book ablation showed removing tools cost 16–18 accuracy points (McNemar p < 10⁻⁶) while justifications stayed ungrounded.",
+      "Ran 3,400+ agent episodes across two 8B open-weight models; a paired closed-book ablation showed removing tools cost 16-18 accuracy points (McNemar p < 10⁻⁶) while justifications stayed ungrounded.",
       "Two-stage rollout/eval architecture: every reported number regenerates from committed traces with no GPU, model, or network. 331 tests, ~10k LOC."
     ],
     link: "https://github.com/Ritwick14999/Clinical-reasoning-agent"
@@ -50,29 +50,6 @@ const projects = [
       "Helped develop the Streamlit chat interface and source-citation display for the Hugging Face Spaces deployment."
     ],
     link: "https://github.com/Ritwick14999/gita-advaita-llm-chatbot"
-  }
-];
-
-const earlierProjects = [
-  {
-    title: "AI-Based Disease Diagnosis System",
-    date: "Jun 2025 – Jul 2025",
-    org: "ML Intern, YBI Foundation",
-    tech: "Python, Scikit-learn, XGBoost, SMOTE, Pandas",
-    points: [
-      "Multi-class disease classifier on 132 binary symptom features, using LabelEncoder and SMOTE to handle class imbalance.",
-      "Trained an XGBoost classifier and evaluated it with accuracy, per-class classification reports, and cross-validation; serialized the model with joblib behind an interactive symptom-prediction widget."
-    ],
-    link: "https://github.com/Ritwick14999/Disease-Predictor"
-  },
-  {
-    title: "Procrastination Analyzer",
-    tech: "Python, Pandas, Scikit-learn, Streamlit, TF-IDF",
-    points: [
-      "Analyzed timestamp logs to identify productivity patterns (inactivity gaps, burst sessions).",
-      "Built a heuristic scoring system to predict next-day procrastination risk, surfaced in an interactive Streamlit dashboard."
-    ],
-    link: "https://github.com/Ritwick14999/procrastination-analyzer"
   }
 ];
 
@@ -109,11 +86,6 @@ function Projects() {
       <h3 className="section-title">Projects</h3>
       <div className="projects-grid">
         {projects.map((proj) => <ProjectCard key={proj.title} proj={proj} />)}
-      </div>
-
-      <h3 className="section-title">Earlier Projects</h3>
-      <div className="projects-grid">
-        {earlierProjects.map((proj) => <ProjectCard key={proj.title} proj={proj} />)}
       </div>
     </div>
   );
