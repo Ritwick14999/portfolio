@@ -136,6 +136,65 @@ body {
   font-size: 1.4rem;
 }
 
+.section-title {
+  color: #e65100;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  margin: 40px 0 20px;
+}
+
+.section-title:first-of-type {
+  margin-top: 0;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.project-header h2 {
+  margin-bottom: 0;
+}
+
+.project-date {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #57606a;
+  white-space: nowrap;
+}
+
+.project-org {
+  color: #57606a;
+  font-style: italic;
+  margin: -8px 0 15px;
+}
+
+.project-points {
+  margin-left: 20px;
+}
+
+.project-points li {
+  margin-bottom: 6px;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #57606a;
+  background: #f6f8fa;
+  border: 1px dashed #d0d7de;
+}
+
 /* Terminal-style tech stack pills */
 .tech-stack {
   font-family: 'Consolas', 'Courier New', monospace;
